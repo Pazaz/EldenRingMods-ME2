@@ -101,15 +101,15 @@ namespace ModUtils
 
 	static std::string GetModFolderPath()
 	{
-		return std::string("mods\\" + GetCurrentModName());
+		return std::string(GetCurrentModName());
 	}
 
 	static void OpenModLogFile()
 	{
 		if (!muLogFile.is_open())
 		{
-			CreateDirectoryA(std::string("mods\\" + GetCurrentModName()).c_str(), NULL);
-			muLogFile.open("mods\\" + GetCurrentModName() + "\\log.txt");
+			CreateDirectoryA(std::string(GetCurrentModName()).c_str(), NULL);
+			muLogFile.open(GetCurrentModName() + "\\log.txt");
 		}
 	}
 
