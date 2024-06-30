@@ -53,7 +53,8 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>COPY "C:\Programming\Github repositories\EldenRingMods\x64\Release\$(ProjectName).dll" "F:\SteamLibrary\steamapps\common\ELDEN RING\Game\mods\"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
